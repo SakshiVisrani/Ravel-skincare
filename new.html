@@ -66,6 +66,162 @@
     padding: 15px;
     
 }
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  .top-banner {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .countdown {
+    background: yellow;
+    color: black;
+    padding: 2px 6px;
+    font-weight: bold;
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(26, 23, 23, 0.1);
+  }
+  .navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .navbar-left a, .navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+  }
+  .navbar-center {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .quiz-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+
+  footer {
+    background-color: #243434;
+    color: white;
+    padding: 60px 80px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+  }
+
+  .footer-links ul li a:hover {
+    color: #ccc;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-social h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .footer-social i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .footer-social i:hover {
+    color: #ccc;
+  }
+
+  .footer-newsletter {
+    max-width: 250px;
+  }
+
+  .footer-newsletter h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .footer-newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .footer-newsletter input::placeholder {
+    color: #ccc;
+  }
+
+  .footer-newsletter button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #243434;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-newsletter {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
         </style>
     </head>
 
@@ -73,59 +229,32 @@
         
             <!-- place navbar here -->
               <header>
-             <header style="position: sticky; top:0px; background-color: white;">
+             <header style="position: sticky; top:0px; background-color: blue;">
           <p><h2><center>Ravel</center></h2></p>
           <p><h4><center>approved by SHARK TANK INDIA</center></h4></p>
             <!-- place navbar here -->
-             <nav
-                class="navbar navbar-expand-sm navbar-dark bg-primary"
-             >
-                
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                       <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\index.html" aria-current="page"
-                                >Home <span class="visually-hidden">(current)</span></a
-                            >
-                        <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\hair.html" aria-current="page"
-                                >Haircare <span class="visually-hidden">(current)</span></a
-                            >
-                            <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\skin.html" aria-current="page"
-                            >Skincare <span class="visually-hidden">(current)</span></a>
-
-                            <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\new.html" aria-current="page"
-                                >New Launches <span class="visually-hidden">(current)</span></a
-                            >
-                        </li>
-                         <div class="d-flex align-items-center ms-auto">
-                        <div class="d-flex ms-auto">
-                              <a href="C:\Users\siyav\HTML PROJECT\assignment.html\login.html" class="me-3"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Log In" height="24"></a>
-                 
-                    <a href="C:\Users\siyav\HTML PROJECT\cart.html"><img src="https://cdn-icons-png.flaticon.com/512/34/34627.png" alt="Cart" height="24"></a>
+            <div class="navbar">
+                <div class="navbar-left">
+                  <a href="C:\Users\siyav\HTML PROJECT\index.html">Home</a>
+                  <a href="C:\Users\siyav\HTML PROJECT\hair.html">Haircare</a>
+                  <a href="C:\Users\siyav\HTML PROJECT\skin.html">Skincare</a>
+                  <a href="C:\Users\siyav\HTML PROJECT\new.html">New Launches</a>
+  
                 </div>
+                <div class="navbar-center">Ravel</div>
+                <div class="navbar-right">
+                  <a href="C:\Users\siyav\HTML PROJECT\login.html">Login/Sigin</a>
+                  <a href="#"></a>
+                  <a href="C:\Users\siyav\HTML PROJECT\cart.html">Cart</a>
+                  
+                  <i class="fa-regular fa-user icon"></i>
+                  <i class="fa-solid fa-bag-shopping icon"></i>
                 </div>
-                       
-                    </ul>
-                    <!-- <form class="d-flex my-2 my-lg-0">
-                        <input
-                            class="form-control me-sm-2"
-                            type="text"
-                            placeholder="Search"
-                        />
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                            Search
-                        </button>
-                    </form> -->
-                </div>
-             </nav>
-
+              </div>
              
         </header>
         <h1><center><i>New Launches</i></center></h1>
-        <hr>
+        
         <form action="">
             <span>FILTER BY </span><label for="All Products">All Products</label>
             <select name="All Products" id="All Products">
@@ -145,7 +274,7 @@
             </select> 
              
         </form>
-        <hr>
+        
        
 
        
@@ -184,7 +313,39 @@
         </main>
         <footer>
             <!-- place footer here -->
-             <img width="100%" src="C:\Users\siyav\Pictures\end.png" alt="">
+            <div class="footer-container">
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Track your order</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Ingredients</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+            
+                <div class="footer-social">
+                  <h4>Stay Connected</h4>
+                  <i class="fab fa-facebook-f">facebook</i>
+                  <i class="fab fa-instagram">instagram</i>
+                  <i class="fab fa-pinterest-p">pinterest</i>
+                  <i class="fab fa-youtube">youtube</i>
+                  <i class="fab fa-twitter">twitter</i>
+                  
+                </div>
+            
+                <div class="footer-newsletter">
+                  <h4>sign up for our newsletter</h4>
+                  <input type="email" placeholder="Email address" />
+                  <button>Sign up!</button>
+                </div>
+              </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

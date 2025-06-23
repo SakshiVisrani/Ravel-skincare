@@ -57,59 +57,248 @@
     padding: 15px;
     
 }
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  .top-banner {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .countdown {
+    background: yellow;
+    color: black;
+    padding: 2px 6px;
+    font-weight: bold;
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(26, 23, 23, 0.1);
+  }
+  .navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .navbar-left a, .navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+  }
+  .navbar-center {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .quiz-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 60px;
+    background-color: #fff;
+  }
+
+  .text-content {
+    max-width: 500px;
+  }
+
+  .text-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+
+  .text-content p {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.7;
+  }
+
+  .image-content img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .text-content, .image-content img {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .text-content h2 {
+      font-size: 28px;
+    }
+
+    .text-content p {
+      font-size: 18px;
+    }
+  }
+
+
+  footer {
+    background-color: #243434;
+    color: white;
+    padding: 60px 80px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+  }
+
+  .footer-links ul li a:hover {
+    color: #ccc;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-social h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .footer-social i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .footer-social i:hover {
+    color: #ccc;
+  }
+
+  .footer-newsletter {
+    max-width: 250px;
+  }
+
+  .footer-newsletter h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .footer-newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .footer-newsletter input::placeholder {
+    color: #ccc;
+  }
+
+  .footer-newsletter button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #243434;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-newsletter {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
         </style>
     </head>
 
     <body>
         <header>
-             <header style="position: sticky; top:0px; background-color: white;">
+             <header style="position: sticky; top:0px; background-color: blue;">
           <p><h2><center>Ravel</center></h2></p>
           <p><h4><center>approved by SHARK TANK INDIA</center></h4></p>
             <!-- place navbar here -->
-             <nav
-                class="navbar navbar-expand-sm navbar-dark bg-primary"
-             >
-                
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                       <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\index.html" aria-current="page"
-                                >Home <span class="visually-hidden">(current)</span></a
-                            >
-                        <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\hair.html" aria-current="page"
-                                >Haircare <span class="visually-hidden">(current)</span></a
-                            >
-                            <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\skin.html" aria-current="page"
-                            >Skincare <span class="visually-hidden">(current)</span></a>
-
-                            <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\new.html" aria-current="page"
-                                >New Launches <span class="visually-hidden">(current)</span></a
-                            >
-                        </li>
-                         <div class="d-flex align-items-center ms-auto">
-                        <div class="d-flex ms-auto">
-                              <a href="C:\Users\siyav\HTML PROJECT\assignment.html\login.html" class="me-3"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Log In" height="24"></a>
-                 
-                    <a href="C:\Users\siyav\HTML PROJECT\cart.html"><img src="https://cdn-icons-png.flaticon.com/512/34/34627.png" alt="Cart" height="24"></a>
+            <div class="navbar">
+                <div class="navbar-left">
+                  <a href="C:\Users\siyav\HTML PROJECT\index.html">Home</a>
+                  <a href="C:\Users\siyav\HTML PROJECT\hair.html">Haircare</a>
+                  <a href="C:\Users\siyav\HTML PROJECT\skin.html">Skincare</a>
+                  <a href="C:\Users\siyav\HTML PROJECT\new.html">New Launches</a>
+  
                 </div>
+                <div class="navbar-center">Ravel</div>
+                <div class="navbar-right">
+                  <a href="C:\Users\siyav\HTML PROJECT\login.html">Login/Sigin</a>
+                  <a href="#"></a>
+                  <a href="C:\Users\siyav\HTML PROJECT\cart.html">Cart</a>
+                  
+                  <i class="fa-regular fa-user icon"></i>
+                  <i class="fa-solid fa-bag-shopping icon"></i>
                 </div>
-                       
-                    </ul>
-                    <!-- <form class="d-flex my-2 my-lg-0">
-                        <input
-                            class="form-control me-sm-2"
-                            type="text"
-                            placeholder="Search"
-                        />
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                            Search
-                        </button>
-                    </form> -->
-                </div>
-             </nav>
+              </div>
 </header>
             <!-- place navbar here -->
         </header>
@@ -119,29 +308,79 @@
         </div>
         
 
-           <div class="skintype">
-             <span><img src="C:\Users\siyav\Pictures\Screenshot 2025-02-18 235339.png" alt=""></span>
-        
-           </div>
-           <div class="skin">
-           <img height="500px" width="500px" src="https://www.ravelcare.com/cdn/shop/files/55_1024x1024@2x.png?v=1738956351" alt="">
-           </div>
+        <div class="section">
+            <div class="text-content">
+              <h2>Custom Skincare</h2>
+              <p>
+                Your skin is unique, and your skincare should be too. <b>The Ravel Customized 
+                Skincare </b> routine is crafted specifically for your skin’s needs, ensuring every
+                 product is formulated to address your concerns. Whether you need hydration, 
+                 acne control, anti-aging, or brightening, we create a routine that works just for
+                  you.<br><br>
+                  Key Benefits: <br>
+                  ✔ Fully personalized skincare routine based on your skin needs <br>
+                  ✔ Science-backed formulations with high-performance ingredients <br>
+                  ✔ Gentle, effective, and non-irritating formulas <br>
+                  ✔ Suitable for all skin types and concerns
+              </p>
+            </div>
+            <div class="image-content">
+              <img src="C:\Users\siyav\Pictures\Screenshot 2025-06-23 205315.png"  alt="Hair Product Lab" />
+              <!-- Replace the URL above with your actual image path if local -->
+            </div>
+          </div>
+
+           
         <main>
             <img height="400px" width="100%" src="C:\Users\siyav\Pictures\skintype.png" alt="">
             <div class="hii">
             <h1><i><center>How it works</center></i></h1>
-            </div>
 
-            <div class="first">
-                <img height="600px" width="600px" src="https://cdn.shopify.com/s/files/1/0554/6108/5286/files/56.png?v=1738953905_720x.jpg?v=1580540044" alt="">
-            </div>
+            <div class="section">
+                <div class="image-content">
+                    <img src="C:\Users\siyav\Pictures\Screenshot 2025-06-23 205957.png" alt="Hair Product Lab" />
+                    <!-- Replace the URL above with your actual image path if local -->
+                  </div>
+                <div class="text-content">
+                  <h2>Tell Us About Your<br>Skin</h2>
+                  <p>
+                    Take our quick quiz to share your skin type, 
+                    concerns, and lifestyle. The more we know,
+                     the better we customize!<br><br>
+                  </p>
+                </div>
+              </div>
 
-            <div class="second">
-                <img height="500px" width="500px" src="C:\Users\siyav\Pictures\quiz.png" alt="">
-            </div>
-            <div class="skin">
-                <img height="600px" width="100%" src="C:\Users\siyav\Pictures\Screenshot 2025-02-22 195419.png" alt="">
-            </div>
+              <div class="section">
+                <div class="text-content">
+                  <h2>We Create Your<br>Formula</h2>
+                  <p>
+                    Our experts craft a unique blend of high-
+                    performance ingredients tailored to your 
+                    specific needs.<br><br>
+                    
+                  </p>
+                </div>
+                <div class="image-content">
+                  <img src="C:\Users\siyav\Pictures\Screenshot 2025-06-23 231214.png"  alt="Hair Product Lab" />
+                  <!-- Replace the URL above with your actual image path if local -->
+                </div>
+              </div>
+
+              <div class="section">
+                <div class="image-content">
+                    <img src="C:\Users\siyav\Pictures\Screenshot 2025-06-23 231426.png" alt="Hair Product Lab" />
+                    <!-- Replace the URL above with your actual image path if local -->
+                  </div>
+                <div class="text-content">
+                  <h2>Freshly Made &<br>Delivered</h2>
+                  <p>
+                    Your personalized skincare is freshly
+                    handcrafted and shipped to your doorstep
+                    within 4-6 days.!<br><br>
+                  </p>
+                </div>
+              </div>
         </main>
         <footer>
             <!-- place footer here -->

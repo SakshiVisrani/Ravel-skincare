@@ -82,51 +82,95 @@
     
 }
 
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.top-banner {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+.countdown {
+  background: yellow;
+  color: black;
+  padding: 2px 6px;
+  font-weight: bold;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(26, 23, 23, 0.1);
+}
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar-left a, .navbar-right a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+.navbar-center {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.quiz-btn {
+  background-color: black;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
         
         </style>
     </head>
 
     <body>
-             <header style="position: sticky; top:0px; z-index: 2; background-color: white;">
+             <header style="position: sticky; top:0px; z-index: 2; background-color: blue;">
           <p><h2><center>Ravel</center></h2></p>
           <p><h4><center>approved by SHARK TANK INDIA</center></h4></p>
             <!-- place navbar here -->
-             <nav
-                class="navbar navbar-expand-sm navbar-dark bg-primary"
-             >
-                
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                       <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\index.html" aria-current="page"
-                                >Home <span class="visually-hidden">(current)</span></a
-                            >
-                            </li>
-                        <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\hair.html" aria-current="page"
-                                >Haircare <span class="visually-hidden">(current)</span></a
-                            >
-                            </li>
-                            <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\skin.html" aria-current="page"
-                            >Skincare <span class="visually-hidden">(current)</span></a>
-                            </li>
+             
 
-                            <li class="nav-item">
-                            <a style="color: black;" class="nav-link active" href="C:\Users\siyav\HTML PROJECT\new.html" aria-current="page"
-                                >New Launches <span class="visually-hidden">(current)</span></a
-                            >
-                        </li>
-                       <div class="d-flex align-items-center ms-auto icon-container" >
-                        <div class="d-flex ms-auto">
-                              <a href="C:\Users\siyav\HTML PROJECT\assignment.html\login.html" class="me-3"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Log In" height="24"></a>
-                 
-                    <a href="C:\Users\siyav\HTML PROJECT\cart.html"><img src="https://cdn-icons-png.flaticon.com/512/34/34627.png" alt="Cart" height="24"></a>
-                </div>
-                </div>
-                  </ul>  
-                </div>  
-             </nav>
+
+
+             <div class="navbar">
+              <div class="navbar-left">
+                <a href="C:\Users\siyav\HTML PROJECT\index.html">Home</a>
+                <a href="C:\Users\siyav\HTML PROJECT\hair.html">Haircare</a>
+                <a href="C:\Users\siyav\HTML PROJECT\skin.html">Skincare</a>
+                <a href="C:\Users\siyav\HTML PROJECT\new.html">New Launches</a>
+
+              </div>
+              <div class="navbar-center">Ravel</div>
+              <div class="navbar-right">
+                <a href="C:\Users\siyav\HTML PROJECT\login.html">Login/Sigin</a>
+                <a href="#"></a>
+                <a href="C:\Users\siyav\HTML PROJECT\cart.html">Cart</a>
+                
+                <i class="fa-regular fa-user icon"></i>
+                <i class="fa-solid fa-bag-shopping icon"></i>
+              </div>
+            </div>
+          
 </header>
              <img height="600px" width="100%" src="https://www.ravelcare.com/cdn/shop/files/ST_Desk_banner_2048x2048.png?v=1737191676" alt="">
              <br>
